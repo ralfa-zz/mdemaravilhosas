@@ -1,0 +1,577 @@
+/*GERAL////////////Geral////////////*/
+body{
+    margin: 0;
+}
+
+section{
+    padding: 30px 0;
+}
+
+ul{
+    padding: 0;
+}
+
+/*GERAL//////////////Textos////////////*/
+
+h1{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #4a4a4a;
+}
+
+h2{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    width: 90%;
+}
+
+h3{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 1.5em;
+    text-align: center;
+    color: #63458a;
+    margin: 30px 0 20px 0;
+}
+
+p{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    color: #7e5a9b;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+}
+
+.destaque{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.estatistica{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.5em;
+    padding: 20px 20px 0 20px;
+    color: #333333;
+}
+
+/*GERAL---------Navegação---------*/
+
+.topbar{
+    background-color: #63458a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+
+}
+
+.logo{
+    max-width: 150px;
+    margin: 10px 0;
+}
+
+.menu-bg{
+    background-color: #7e5a9b;
+    width: 40px;
+}
+
+.menu-dt{
+    display: none;
+}
+
+.menu-dt li{
+    list-style-type: none;
+    display: inline;
+}
+
+li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    line-height: 2em;
+}
+
+/*-----------HOME------------*/
+
+/* Header Start */
+.header-home{
+    background: url(../img/bg-banner-claro.png);
+    background-position: center;
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:100px;
+
+}
+
+.header-home > div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-home > div p{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 900;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #b288c0;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Seção Intro */
+
+.intro{
+    background: linear-gradient(to right, #9a48d0, #b288c0);
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.intro div{
+    width: 80%;
+    display: block;
+    text-align: center;
+}
+
+.intro img{
+    width: 200px;
+}
+
+/* Seção Mulheres */
+
+.mulheres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mulheres img{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.mulheres > div{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 1em;
+}
+
+.mulheres .avatar, .mulheres .avatar-dt{
+    margin: 0 auto;
+}
+
+.avatar, .avatar-dt{
+    width: 100%;
+}
+
+.avatar-dt{
+    display: none;
+}
+
+/* Seção Criadoras */
+
+.miga{
+    width: 90px;
+}
+
+.criadoras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #63458a;
+}
+
+.criadoras h3{
+    color: #ffffff;
+}
+
+.criadoras > div{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+    grid-gap: 20px;
+
+}
+
+.criadoras img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+/*-----------SOBRE------------*/
+
+/* Header Sobre */
+.header-sobre{
+    background: url(../img/bg-banner-escuro.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:100px;
+
+}
+
+.header-sobre > div{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+/* Seção Sobre */
+.sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-conteudo{
+    width: 80%;
+}
+
+.foto-sobre{
+    background: url(../img/mulher.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:100px;
+}
+
+/* Seção Equipe */
+
+.equipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #63458a;
+}
+
+.equipe h3{
+    color: #ffffff;
+}
+
+.equipe > div{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+    grid-gap: 20px;
+}
+
+.equipe img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+/*----------PERFILS----------*/
+
+/* Header Perfis */
+
+.header-perfis{
+    background: url(../img/bg-banner-escuro.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:100px;
+
+}
+
+.header-perfis > div{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+/* Seção Perfis */
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.perfil img{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.perfil p{
+    width: 50%;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.perfil > div{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 1em;
+}
+
+/*----------PERFIL INDIVIDUAL------------*/
+
+/* Header Perfil Individual */
+.header-perfil-individual{
+    background: url(../img/bg-banner-escuro.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:100px;
+}
+
+.header-perfil-individual > div{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.personalidade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personalidade div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personalidade div p{
+
+}
+
+.personalidade-1{
+    width: 200px;
+    padding: 20px;
+}
+
+.destaque-personalidade{
+    border: 2px solid #63458a;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.destaque-personalidade p{
+    color: #63458a;
+    margin: 0;
+}
+
+/* Seção Historia */
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.img-personalidade{
+    background: url(../img/bg-banner-escuro.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 30vh;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.box{
+    width: 80%;
+}
+
+/* Seção Autora */
+
+.autora{
+    background-color: #e4b7e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    padding: 0;
+}
+
+.autora div{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.autora div div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.img-autora{
+    width: 100px;
+    padding: 20px;
+}
+
+/* Seção Recomendados */
+
+.recomendados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recomendado-card{
+    background-color: #e4b7e5;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recomendado-card div{
+    background-color: #e4b7e5;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+.img-card{
+    width: 200px;
+
+}
+
+.ler-mais{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #9a48d0;
+    font-weight: 700;
+}
+
+/*GERAL------------Footer------------*/
+
+footer > div{
+    background-color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer div div{
+    padding: 10px 0;
+}
+
+footer ul{
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+footer p, a{
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer img{
+    width: 200px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media img{
+    height: 30px;
+    padding: 0 10px;
+}
+
+.footnote{
+    text-align: center;
+    background-color: #333333;
+    width: 100%;
+    margin: 0;
+    padding: 5px 0;
+    font-size: 9px;
+}
